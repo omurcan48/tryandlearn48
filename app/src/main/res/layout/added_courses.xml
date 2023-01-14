@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/newCourse"
+        android:layout_width="245dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/tvAutoComplete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/newCourseCredit"
+        android:layout_width="102dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/krediler"
+        app:layout_constraintEnd_toStartOf="@+id/newCourseNote"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newCourse" />
+
+    <Spinner
+        android:id="@+id/newCourseNote"
+        android:layout_width="114dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/tumNotlar"
+        app:layout_constraintEnd_toStartOf="@+id/courseDelete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/newCourseCredit"
+        app:layout_constraintTop_toBottomOf="@+id/newCourse" />
+
+    <Button
+        android:id="@+id/courseDelete"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/deepOrange"
+        android:text="@string/textDeletion"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/newCourse"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

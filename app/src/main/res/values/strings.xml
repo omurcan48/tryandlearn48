@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dinamik Ortalama Hesaplama</string>
+    <string name="tvAutoComplete">Ders ismini yazınız</string>
+    <string name="textSaveMe">Kaydet</string>
+    <string name="textCalculate">Hesapla</string>
+    <string name="textDeletion">Sil</string>
+</resources>
